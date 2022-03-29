@@ -13,7 +13,10 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- 默认主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <!-- 目录分栏 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+    <!-- 目录跳转 -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 </head>
 
 <body>
@@ -43,6 +46,19 @@
                 nextText: '下一章节',
                 crossChapter: true,
                 crossChapterText: true
+            },
+            // 目录跳转
+            toc: {
+                scope: '.markdown-section',
+                headings: 'h1,h2',
+                title: '点击跳转',
+            },
+            //字数插件
+            count: {
+                countable: true,
+                fontsize: '0.9em',
+                color: 'rgb(90,90,90)',
+                language: 'chinese'
             }
         }
     </script>
@@ -79,6 +95,10 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <!-- 分章节按钮 -->
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- 目录跳转 -->
+    <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <!-- 字数插件 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
 </body>
 
 </html>
