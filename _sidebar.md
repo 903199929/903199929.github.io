@@ -1,7 +1,6 @@
 - Markdown
   - 基本语法
     - [标题语法](Markdown/标题语法.md)
-    - [段落语法](Markdown/段落语法.md)
     - [换行语法](Markdown/换行语法.md)
     - [强调语法](Markdown/强调语法.md)
     - [引用语法](Markdown/引用语法.md)
