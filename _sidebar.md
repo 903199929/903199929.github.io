@@ -11,4 +11,12 @@
     - [图片语法](Markdown/图片语法.md)
     - [转义字符语法](Markdown/转义字符语法.md)
     - [内嵌HTML标签语法](Markdown/内嵌HTML标签)
+  - 拓展语法
+    - [表格语法](Markdown/表格语法.md)
+    - [围栏代码块](Markdown/围栏代码块.md)
+    - [标题编号](Markdown/标题编号语法.md)
+    - [定义列表](Markdown/定义列表.md)
+    - [任务列表](Markdown/任务列表语法.md)
+    - [使用Emoji表情](Markdown/使用Emoji表情.md)
+    - [自动网络链接](Markdown/自动网址链接.md)
 
