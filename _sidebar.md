@@ -1,3 +1,30 @@
+- 框架
+  - [Simple-ORM](Simple-ORM/Simple-ORM.md)
+    - [查询实现](Simple-ORM/Search.md)
+    - [插入实现](Simple-ORM/Insert.md)
+    - [修改实现](Simple-ORM/Update.md)
+    - [删除实现](Simple-ORM/Delete.md)
+    - [条件查询实现](Simple-ORM/SearchByCondition.md)
+- 数据库
+  - [MySQL](MySQL/MySQL.md)
+    - 索引
+      - [索引的基本原理](MySQL/索引的基本原理.md)
+      - [索引设计的原则](MySQL/索引设计的原则.md)
+      - [MySQL什么情况下设置了索引但没法使用](MySQL/MySQL什么情况下设置了索引但没法使用.md)
+      - [MySQL聚簇和非聚簇索引的区别](MySQL/MySQL聚簇和非聚簇索引的区别.md)
+      - [为什么要遵循最左前缀原则才能使用索引](MySQL/为什么要遵循最左前缀原则才能使用索引.md)
+    - Innodb
+      - [Innodb中的B+树是如何产生的](MySQL/Innodb中的B+树是如何产生的.md)
+      - [Innodb是如何支持范围操作走索引的](MySQL/Innodb是如何支持范围操作走索引的.md)
+      - [Innodb是如何实现事务的](MySQL/Innodb是如何实现事务的.md)
+    - 优化
+      - [MySQL慢查询该如何优化](MySQL/MySQL慢查询该如何优化.md)
+      - [MySQL执行计划](MySQL/MySQL执行计划.md)
+      - [如何提高Insert性能](MySQL/如何提高Insert性能.md)
+    - 锁
+      - [MySQL锁有哪些？](MySQL/MySQL锁有哪些？.md)
+    - 其他
+      - [高度为3的B+树能存放多少数据](MySQL/高度为3的B+树能存放多少数据.md)
 - Markdown
   - 基本语法
     - [标题语法](Markdown/标题语法.md)
@@ -19,21 +46,3 @@
     - [任务列表](Markdown/任务列表语法.md)
     - [使用Emoji表情](Markdown/使用Emoji表情.md)
     - [自动网络链接](Markdown/自动网址链接.md)
-- 框架
-  - [Simple-ORM](Simple-ORM/Simple-ORM.md)
-    - [查询实现](Simple-ORM/Search.md)
-    - [插入实现](Simple-ORM/Insert.md)
-    - [修改实现](Simple-ORM/Update.md)
-    - [删除实现](Simple-ORM/Delete.md)
-    - [条件查询实现](Simple-ORM/SearchByCondition.md)
-- 数据库
-  - [MySQL](MySQL/MySQL.md)
-    - [Innodb中的B+树是如何产生的](MySQL/Innodb中的B+树是如何产生的.md)
-    - [高度为3的B+树能存放多少数据](MySQL/高度为3的B+树能存放多少数据.md)
-    - [Innodb是如何支持范围操作走索引的](MySQL/Innodb是如何支持范围操作走索引的.md)
-    - [为什么要遵循最左前缀原则才能使用索引](MySQL/为什么要遵循最左前缀原则才能使用索引.md)
-    - [Innodb是如何实现事务的](MySQL/Innodb是如何实现事务的.md)
-    - [MySQL锁有哪些？](MySQL/MySQL锁有哪些？.md)
-    - [MySQL慢查询该如何优化](MySQL/MySQL慢查询该如何优化.md)
-    - [MySQL什么情况下设置了索引但没法使用](MySQL/MySQL什么情况下设置了索引但没法使用.md)
-    - [MySQL聚簇和非聚簇索引的区别](MySQL/MySQL聚簇和非聚簇索引的区别.md)
