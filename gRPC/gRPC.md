@@ -2,6 +2,18 @@
 
 开发环境：macOS(Arm64), .NET6, VS for Mac 2022
 
+## gRPC 流
+
+---
+
+|服务类型|特点|
+|---|---|
+|简单RPC|一般的RPC调用，传入一个请求参数，返回一个返回对象(前面到请求没有处理完，后面的请求就不会被处理)|
+|服务端流式 RPC|传入一个请求对象，服务端可以返回多个结果对象|
+|客户端流式 RPC|客户端传入多个请求对象，服务端返回一个结果对象(流式管道，非长连接，解决了部分队头堵塞，但并发量高的话还是可能被阻塞)|
+|双向流式 RPC|结合客户端流式RPC和服务端流式RPC，可以传入多个请求对象，返回多个结果对象|
+
+
 ## 搭建
 
 ---
@@ -79,6 +91,7 @@
     using Grpc.Net.Client;
     using Service;
 
+    // 官方文档中此处为https协议，但是macOS不支持，所以只能使用http协议
     using (var channel = GrpcChannel.ForAddress("http://localhost:5001"))
     {
         var client = new Greeter.GreeterClient(channel);
