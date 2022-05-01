@@ -6,10 +6,12 @@
 
 消息是`Protobuf`中的主要数据传输对象。它们在概念上类似于类。
 
+proto文件用于定义服务与数据结构，是一种高效数据交换格式，相对于Json，Protobuf有更高的转化效率，时间效率和空间效率都是JSON的3-5倍。
+
 ```csharp
+// proto文件
 syntax = "proto3";
 
-// 命名空间
 option csharp_namespace = "Contoso.Messages";
 
 message Person {
@@ -18,6 +20,14 @@ message Person {
     string last_name = 3;
 }
 ```
+
+文件描述：  
+- `syntax` 标识Protobuf版本为v3
+- `option csharp_namespace` 标识生成C#类的命名空间
+- `package` 标识proto文件的命名空间
+- `service` 定义服务
+- `rpc FuncName (Input) returns (Output)` 定义一个远程过程
+- `message` 声明数据结构
 
 前面的消息定义（`Person`）将三个字段指定为名称/值对。与.NET 类型上的属性类似，每个字段都有名称和类型。 
 
