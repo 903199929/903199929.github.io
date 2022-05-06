@@ -34,9 +34,9 @@
   - [RabbitMQ](消息队列/RabbitMQ.md)
 - [gRPC](gRPC/gRPC.md)
   - [Protobuf](gRPC/Protobuf.md)
-- [多线程]
+- 多线程
   - [Parallel](多线程/Parallel.md)
-- [网络协议]
+- 网络协议
   - [OSI七层模型](网络协议/OSI七层模型.md)
 - [NPOI](NPOI/NPOI.md)
 - Markdown
